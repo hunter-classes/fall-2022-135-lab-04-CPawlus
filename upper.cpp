@@ -31,6 +31,7 @@ std::string upper(int length)
       }
       std::cout << "\n";
    }
+   std::cout << "\n";
    
    return "";
 }

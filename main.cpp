@@ -14,36 +14,46 @@ different functions.
 #include "cross.h"
 #include "lower.h"
 #include "upper.h"
-#include "trapezoid"
+#include "trapezoid.h"
+#include "checkerboard3x3.h"
 
-int main () 
+int main() 
 {
    // A
-   std::cout << "Shape:\n";
+   std::cout << "Input width: 7\nInput height: 4\n";
+   std::cout << "\nShape:\n";
    box(7,4);
    std::cout << "\n------------------\n";
    // B
-   std::cout << "Shape:\n";
+   std::cout << "Input width: 11\nInput height: 6\n";
+   std::cout << "\nShape:\n";
    checkerboard(11,6);
    std::cout << "\n------------------\n";
    // C
-   std::cout << "Shape:\n";
+   std::cout << "Input size: 8\n";
+   std::cout << "\nShape:\n";
    cross(8);
    std::cout << "\n------------------\n";
    // cross(9); works with odd sizes
    // D
-   std::cout << "Shape:\n";
+   std::cout << "Input side length: 6\n";
+   std::cout << "\nShape:\n";
    lower(6);
    std::cout << "\n------------------\n";
    // E
-   std::cout << "Shape:\n";
+   std::cout << "Input side length: 5\n";
+   std::cout << "\nShape:\n";
    upper(5);
    std::cout << "\n------------------\n";
    // F
-   std::cout << "Shape:\n";
+   std::cout << "Input width: 12\nInput height: 5\n";
+   std::cout << "\nShape:\n";
+   trapezoid(12,5);
    std::cout << "\n------------------\n";
    // G
-   std::cout << "Shape:\n";
+   std::cout << "Input width: 27\nInput height: 27\n";
+   std::cout << "\nShape:\n";
+   checkerboard3x3(27,27);
    std::cout << "\n------------------\n";
 
    return 0;
